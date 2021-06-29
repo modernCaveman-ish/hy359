@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hospital</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h3>____Katartisi Efimerias____</h3>
+        <div>---------------------------------------------</div>
+
+        <form ACTION=katartisi_efimerias METHOD=POST>
+
+            Date<INPUT TYPE="date" NAME="date" value="">
+
+            <div>_______Diathesimoi Giatroi_______</div>
+            <div>---------------------------------------------</div>
+            Doctor_1 <INPUT TYPE=text NAME=doctor1 value="1">
+            <div> </div>
+            Doctor_2 <INPUT TYPE=text NAME=doctor2 value="2">
+            <div>---------------------------------------------</div>
+           
+            <div>_____Diathesimoi Nosileutes______</div>
+            <div>---------------------------------------------</div>
+            Nurse_1 <INPUT TYPE=text NAME=nurse1 value="1001">
+            <div> </div>
+            Nurse_2 <INPUT TYPE=text NAME=nurse2 value="1002">
+            <div> </div>
+            Nurse_3 <INPUT TYPE=text NAME=nurse3 value="1003">
+            <div>---------------------------------------------</div>
+
+            <div>______Ipeuthinos Efimerias_______</div>
+            <div>---------------------------------------------</div>
+            Admin_1 <INPUT TYPE=text NAME=admin value="1">
+            <div>---------------------------------------------</div>
+
+            <input type="SUBMIT" value=“Submit”>
+        </form>   
+
+        <h3>__Euresi Astheni an yparxei__</h3>
+        <form ACTION=euresh_asthenous method="POST">
+
+            <div>___________A M K A____________</div>
+            <div>---------------------------------------------</div>
+            Amka <input type="text" name="amka" value="1">
+            <div>---------------------------------------------</div>
+            <input type="SUBMIT" value=“Submit”>
+        </form>
+
+                <h2>ERWTHSEIS</h2>
+
+                <a href="erwthseis">Katastash efhmerias</a> <br>
+
+                <a href="kataxorisi_anthrwpinou_dinamikou">Statistika ergazwmenwn</a><br>
+
+                <a href="covid_report">Covid-19 Report</a><br>
+                
+                <a href="statistika_episkepsewn">Statistika episkepsewn ana mera kai ana mina</a> <br>
+                
+                <a href="ekane_exetaseis">Diexagwgi e3etasewn apo Nos prosopiko </a><br>
+            
+                
+                
+                <br><br>
+                
+    <form action="got_examined" method="POST">
+    <div>
+	<div class="container">
+		<h1>Arxeio eksetasewn asthenwn</h1>
+		<div class="info">
+			<label for="amka" class="info_tag"><b>AMKA: </b></label>
+			<input type="text" name="amka" id="amka" placeholder="Enter AMKA" class="input">
+		</div>
+		<div class="info">
+			<label for="date" class="info_tag"><b>Date: </b></label>
+			<input type="date" name="date_selector" value="" id="date_selector" class="input">
+		</div>
+		<div class="info">
+			<label for="exetasi" class="info_tag"><b>Illness: </b></label>
+			<input type="text" name="exetasi" id="exetasi" placeholder="Exetasi" class="input">
+		</div>
+		<div class="info">
+			<label for="Result" class="info_tag"><b>Result: </b></label>
+			<input type="text" name="result" id="result" placeholder="Enter result" class="input">
+		</div>
+	</div>
+    </div>
+    <input type="submit" value="Submit" id="submit_btn" class="submit_btn">
+</form>
+    
+                
+                
+</body>
+</html>
