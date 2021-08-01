@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="panel" id="panel">
+        <div class="input_field">
+            <label">First Name</label>
+            <input type="text" class="input">
+        </div>
+        <div class="input_field">
+            <label">Last Name</label>
+            <input type="text" class="input">
+        </div>
+        <div class="input_field">
+            <label">Passsword</label>
+            <input type="text" class="input" id="password" onkeyup="passwordMissmatch()">
+        </div>
+        <div class="input_field">
+            <label">Confirm Password</label>
+            <input type="text" class="input" id="confirmPassword" onkeyup="passwordMissmatch()">
+            <div id="unMatched">Passwords do not match.</div>
+            <div id="matched">Passwords match</div>
+        </div>
+        <div class="input_field" id="street_div">
+            <label>Street</label>
+            <input type="text" class="input" id="street"
+            placeholder="<number> <street>" onkeyup="getGeolocation()">
+        </div>
+        <div class="input_field">
+            <label>City</label>
+            <input type="text" class="input" id="city" onkeyup="getGeolocation()">
+        </div>
+        <div class="input_field">
+            <label>Country</label>
+            <input type="text" class="input" id="country" onkeyup="getGeolocation()">
+        </div>
+        <div class="button">
+            <button id="submit" onclick="sendMeLocation()">Submit</button>
+        </div>
+        <div id="locationNotFoundMessage"><br>Error location not found...</div>
+        <br>
+        <div id="mapdiv"></div>
+    </div>
+
+    <script async src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script src='script.js' async></script>
+</body>
+</html>
