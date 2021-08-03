@@ -270,3 +270,4 @@ function getExactLocation(coordinates){
         }
     }
 }
+
